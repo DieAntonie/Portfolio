@@ -19,9 +19,9 @@ const portfolioData = {
 
   skills: [
     { category: "Cloud & DevOps", items: ["AWS", "Azure", "Terraform", "Docker", "Kubernetes", "CI/CD", "GitHub Actions", "Azure DevOps"] },
-    { category: "Languages", items: ["C#", ".NET Core", "JavaScript", "TypeScript", "Python", "SQL", "Go"] },
-    { category: "Frameworks", items: ["React", "Angular", "Node.js", "ASP.NET", "Blazor"] },
-    { category: "Databases", items: ["SQL Server", "PostgreSQL", "MongoDB", "Redis", "DynamoDB"] },
+    { category: "Languages", items: ["C#", ".NET Core", "JavaScript", "TypeScript", "Python", "SQL", "PHP"] },
+    { category: "Frameworks", items: ["React", "Angular", "Node.js", "ASP.NET", "CherryPy", "Laravel"] },
+    { category: "Databases", items: ["SQL Server", "PostgreSQL", "MongoDB", "DynamoDB", "MariaDB"] },
     { category: "Tools & Practices", items: ["Azure Boards", "Jira", "Confluence", "Agile/Scrum", "Microservices", "REST APIs", "GraphQL"] }
   ],
 
@@ -29,9 +29,9 @@ const portfolioData = {
     {
       id: "exp1",
       title: "Senior Software Engineer",
-      company: "TechCorp Solutions",
-      location: "San Francisco, CA",
-      startDate: "2019-03",
+      company: "Entelect",
+      location: "Utrecht, Netherlands",
+      startDate: "2021-10",
       endDate: "Present",
       description: "Led architecture and development of microservices platform serving 2M+ users. Designed CI/CD pipelines reducing deployment time by 75%. Mentored team of 8 engineers and established coding standards.",
       highlights: [
@@ -42,11 +42,11 @@ const portfolioData = {
     },
     {
       id: "exp2",
-      title: "Software Engineer II",
-      company: "InnovateTech Inc.",
-      location: "Seattle, WA",
-      startDate: "2016-06",
-      endDate: "2019-02",
+      title: "Intermediate Software Engineer",
+      company: "Kohde (Pty) Ltd",
+      location: "Centurion, South Africa",
+      startDate: "2021-09",
+      endDate: "2020-11",
       description: "Developed enterprise web applications using .NET Core and React. Collaborated with product team to translate requirements into technical solutions. Led migration from monolith to microservices architecture.",
       highlights: [
         "Built real-time dashboard processing 1M+ data points daily",
@@ -56,11 +56,11 @@ const portfolioData = {
     },
     {
       id: "exp3",
-      title: "Software Engineer",
-      company: "DataSoft Systems",
-      location: "Austin, TX",
-      startDate: "2014-01",
-      endDate: "2016-05",
+      title: "Full Stack Developer",
+      company: "Quant Engineering Solutions",
+      location: "Pretoria, South Africa",
+      startDate: "2018-09",
+      endDate: "2020-10",
       description: "Full-stack development of customer-facing applications. Implemented RESTful APIs and integrated third-party services. Participated in Agile ceremonies and contributed to sprint planning.",
       highlights: [
         "Developed payment processing module handling $10M+ monthly",
@@ -70,63 +70,131 @@ const portfolioData = {
     },
     {
       id: "exp4",
-      title: "Junior Software Developer",
-      company: "StartupXYZ",
-      location: "Denver, CO",
-      startDate: "2012-06",
-      endDate: "2013-12",
+      title: "Freelance .NET Developer",
+      company: "BlackIce Digital",
+      location: "Pretoria, South Africa",
+      startDate: "2018-04",
+      endDate: "2018-08",
       description: "Developed and maintained web applications using C# and JavaScript. Collaborated with senior developers on feature implementation. Learned industry best practices and coding standards.",
       highlights: [
         "Built customer portal increasing client retention by 25%",
         "Contributed to 15+ successful client projects",
         "Completed Microsoft certification during first year"
       ]
-    }
+    },
+    {
+      id: "exp5",
+      title: "Technical Consultant",
+      company: "EOH MC Solutions",
+      location: "Cape Town, South Africa",
+      startDate: "2016-12",
+      endDate: "2018-03",
+      description: "Developed and maintained web applications using C# and JavaScript. Collaborated with senior developers on feature implementation. Learned industry best practices and coding standards.",
+      highlights: [
+        "Built customer portal increasing client retention by 25%",
+        "Contributed to 15+ successful client projects",
+        "Completed Microsoft certification during first year"
+      ]
+    },
+    {
+      id: "exp6",
+      title: "Full Stack Developer",
+      company: "Quant Engineering Solutions",
+      location: "Pretoria, South Africa",
+      startDate: "2015-09",
+      endDate: "2016-11",
+      description: "Full-stack development of customer-facing applications. Implemented RESTful APIs and integrated third-party services. Participated in Agile ceremonies and contributed to sprint planning.",
+      highlights: [
+        "Developed payment processing module handling $10M+ monthly",
+        "Created automated testing framework reducing QA time by 40%",
+        "Won quarterly innovation award for process improvement tool"
+      ]
+    },
+    {
+      id: "exp7",
+      title: "Learner Developer",
+      company: "OneLaw (Pty) Ltd",
+      location: "Pretoria, South Africa",
+      startDate: "2012-01",
+      endDate: "2014-10",
+      description: "Full-stack development of customer-facing applications. Implemented RESTful APIs and integrated third-party services. Participated in Agile ceremonies and contributed to sprint planning.",
+      highlights: [
+        "Developed payment processing module handling $10M+ monthly",
+        "Created automated testing framework reducing QA time by 40%",
+        "Won quarterly innovation award for process improvement tool"
+      ]
+    },
   ],
 
   education: [
     {
       type: "degree",
       title: "Bachelor of Science in Computer Science",
-      institution: "University of California, Berkeley",
-      year: "2012",
-      gpa: "3.7",
-      honors: "Magna Cum Laude"
-    },
-    {
-      type: "certification",
-      title: "AWS Certified Solutions Architect",
-      institution: "Amazon Web Services",
-      year: "2023",
-      credentialId: "AWS-ASA-2023-XXXXX"
-    },
-    {
-      type: "certification",
-      title: "Microsoft Certified: Azure Administrator Associate",
-      institution: "Microsoft",
-      year: "2022",
-      credentialId: "AZ-104"
+      institution: "University of South Africa (UNISA)",
+      year: "2019"
     },
     {
       type: "certification",
       title: "Microsoft Certified: Azure Developer Associate",
       institution: "Microsoft",
-      year: "2022",
-      credentialId: "AZ-204"
+      year: "2024",
+      credentialId: "494EDB175D6B7181"
+    },
+    {
+      type: "certification",
+      title: "Microsoft Certified: Azure Administrator Associate",
+      institution: "Microsoft",
+      year: "2024",
+      credentialId: "40EC9EE15D273158"
     },
     {
       type: "certification",
       title: "Microsoft Certified: Azure Fundamentals",
       institution: "Microsoft",
-      year: "2021",
-      credentialId: "AZ-900"
+      year: "2024",
+      credentialId: "68443908155C63AB"
     },
     {
       type: "certification",
-      title: "Microsoft Certified Solutions Developer (MCSD)",
+      title: "AWS Certified Cloud Practitioner",
+      institution: "Amazon Web Services",
+      year: "2024",
+      credentialId: "a9405b8b244c47d48e2cf497e6ac538e"
+    },
+    {
+      type: "certification",
+      title: "PRINCE2® Foundation",
+      institution: "AXELOS Global Best Practice",
+      year: "2020",
+      credentialId: "GR656168589CP"
+    },
+    {
+      type: "certification",
+      title: "Microsoft Certified Solutions Associate: Web Applications (MCSA)",
       institution: "Microsoft",
-      year: "2018",
-      credentialId: "MCSD-AppBuilder"
+      year: "2020",
+      credentialId: "75X44F-C5B436"
+    },
+    {
+      type: "certification",
+      title: "Microsoft Certified Professional ",
+      institution: "Microsoft",
+      year: "2017",
+      credentialId: "915B96-6CDQEF"
+    },
+    {
+      type: "certification",
+      title: "Microsoft Specialist: Programming in HTML5 with JavaScript and CSS3",
+      institution: "Microsoft",
+      year: "2017",
+      credentialId: "311296-N4D44A"
+    },
+    {
+      type: "certification",
+      title: "C++ Programming Certificate",
+      institution: "University of South Africa (UNISA)",
+      year: "2015",
+      credentialId: "UN621681ISA"
     }
   ],
 
