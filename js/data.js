@@ -8,7 +8,7 @@ const portfolioData = {
     location: "Oss - Netherlands",
     linkedin: "https://linkedin.com/in/chrisantoniepieterse",
     github: "https://github.com/DieAntonie",
-    resumeUrl: "assets/ChrisAnderson-Resume.pdf"
+    resumeUrl: "assets/ChrisAntoniPieterse-Resume.pdf"
   },
 
   statement: `Results-driven Senior Software Engineer with 12+ years of experience designing and implementing scalable enterprise solutions. 
@@ -205,7 +205,7 @@ const portfolioData = {
       technologies: ["Python", "AWS Lambda", "React", "DynamoDB", "SageMaker"],
       image: "assets/images/project-cost.jpg",
       demoUrl: "https://demo.cloudcostanalyzer.com",
-      githubUrl: "https://github.com/chrisanderson/cloudcost-analyzer"
+      githubUrl: "https://github.com/dieantonie/cloudcost-analyzer"
     },
     {
       title: "EventFlow Platform",
@@ -213,7 +213,7 @@ const portfolioData = {
       technologies: [".NET 8", "Kafka", "Kubernetes", "PostgreSQL", "Redis"],
       image: "assets/images/project-eventflow.jpg",
       demoUrl: "https://demo.eventflow.io",
-      githubUrl: "https://github.com/chrisanderson/eventflow"
+      githubUrl: "https://github.com/dieantonie/eventflow"
     },
     {
       title: "DevOps Dashboard",
@@ -221,7 +221,7 @@ const portfolioData = {
       technologies: ["TypeScript", "Angular", "Node.js", "Elasticsearch", "Grafana"],
       image: "assets/images/project-devops.jpg",
       demoUrl: "https://demo.devopsdash.com",
-      githubUrl: "https://github.com/chrisanderson/devops-dashboard"
+      githubUrl: "https://github.com/dieantonie/devops-dashboard"
     },
     {
       title: "SecureVault API",
@@ -229,7 +229,7 @@ const portfolioData = {
       technologies: ["Go", "PostgreSQL", "gRPC", "Docker", "Vault"],
       image: "assets/images/project-vault.jpg",
       demoUrl: null,
-      githubUrl: "https://github.com/chrisanderson/securevault-api"
+      githubUrl: "https://github.com/dieantonie/securevault-api"
     }
   ],
 
