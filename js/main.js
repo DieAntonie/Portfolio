@@ -1,3 +1,10 @@
+function toggleProjects(id, btn) {
+  const content = document.getElementById(id);
+  const icon = btn.querySelector('.toggle-icon');
+  content.classList.toggle('expanded');
+  icon.classList.toggle('rotated');
+}
+
 const App = {
   init() {
     this.render();

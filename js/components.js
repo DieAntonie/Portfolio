@@ -14,6 +14,7 @@ const Icons = {
   degree: `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 14l9-5-9-5-9 5 9 5z"/><path stroke-linecap="round" stroke-linejoin="round" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/></svg>`,
   certification: `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>`,
   chevronUp: `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7"/></svg>`,
+  chevronDown: `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>`,
   menu: `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>`,
   close: `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>`,
   folder: `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"/></svg>`,
@@ -131,22 +132,50 @@ const Components = {
     `;
   },
 
-  renderExperience(data) {
-    const timelineItems = data.experience.map(exp => `
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <span class="timeline-date">${Utils.formatDateRange(exp.startDate, exp.endDate)}</span>
-        <div class="timeline-content">
-          <h3>${exp.title}</h3>
-          <p class="company">${exp.company}</p>
-          <p class="location">${Icons.location} ${exp.location}</p>
-          <p>${exp.description}</p>
-          <ul class="timeline-highlights">
-            ${exp.highlights.map(h => `<li>${h}</li>`).join('')}
-          </ul>
+  renderProjectItem(project) {
+    return `
+      <div class="project-item">
+        <h4>${project.name}</h4>
+        ${project.client ? `<span class="project-client">for ${project.client}</span>` : ''}
+        <p>${project.description}</p>
+        <div class="project-tech-tags">
+          ${project.technologies.map(t => `<span>${t}</span>`).join('')}
         </div>
+        ${project.metrics ? `<p class="project-metrics">${project.metrics}</p>` : ''}
       </div>
-    `).join('');
+    `;
+  },
+
+  renderExperience(data) {
+    const timelineItems = data.experience.map(exp => {
+      const projectsHtml = exp.projects && exp.projects.length > 0 ? `
+        <div class="timeline-projects">
+          <button class="project-toggle" onclick="toggleProjects('projects-${exp.id}', this)">
+            View Projects (${exp.projects.length}) <span class="toggle-icon">${Icons.chevronDown}</span>
+          </button>
+          <div class="projects-content" id="projects-${exp.id}">
+            ${exp.projects.map(p => this.renderProjectItem(p)).join('')}
+          </div>
+        </div>
+      ` : '';
+
+      return `
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <span class="timeline-date">${Utils.formatDateRange(exp.startDate, exp.endDate)}</span>
+          <div class="timeline-content">
+            <h3>${exp.title}</h3>
+            <p class="company">${exp.company}</p>
+            <p class="location">${Icons.location} ${exp.location}</p>
+            <p>${exp.description}</p>
+            <ul class="timeline-highlights">
+              ${exp.highlights.map(h => `<li>${h}</li>`).join('')}
+            </ul>
+            ${projectsHtml}
+          </div>
+        </div>
+      `;
+    }).join('');
 
     return `
       <section class="experience" id="experience">

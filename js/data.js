@@ -38,6 +38,21 @@ const portfolioData = {
         "Architected event-driven system processing 50K requests/second",
         "Reduced infrastructure costs by $200K annually through optimization",
         "Implemented automated testing achieving 95% code coverage"
+      ],
+      projects: [
+        {
+          name: "Cloud Migration Platform",
+          client: "Major European Retailer",
+          description: "Led migration of legacy monolith to cloud-native microservices architecture on Azure. Implemented event-driven communication using Service Bus and designed CI/CD pipelines reducing deployment time from hours to minutes.",
+          technologies: ["Azure", ".NET 8", "React", "Terraform", "Azure DevOps"],
+          metrics: "Reduced infrastructure costs by 40% and deployment time by 75%"
+        },
+        {
+          name: "Real-time Analytics Dashboard",
+          description: "Developed real-time data visualization platform processing 50K+ events per second. Built WebSocket-based dashboard with live streaming capabilities and automated alerting.",
+          technologies: ["React", "Node.js", "Apache Kafka", "Redis", "PostgreSQL"],
+          metrics: "Achieved sub-100ms latency for real-time updates"
+        }
       ]
     },
     {
@@ -52,6 +67,21 @@ const portfolioData = {
         "Built real-time dashboard processing 1M+ data points daily",
         "Reduced page load time by 60% through performance optimization",
         "Led migration project saving 500+ engineering hours annually"
+      ],
+      projects: [
+        {
+          name: "Property Management System",
+          client: "National Property Group",
+          description: "Developed full-stack property management solution with tenant tracking, lease management, and maintenance scheduling. Integrated with payment gateways for automated rent collection.",
+          technologies: [".NET Core", "Angular", "SQL Server", "Azure"],
+          metrics: "Processing 500+ monthly transactions with 99.9% uptime"
+        },
+        {
+          name: "Insurance Claims Portal",
+          description: "Built customer-facing portal for insurance claim submissions with document upload, status tracking, and automated workflows. Implemented OCR integration for document processing.",
+          technologies: ["React", "Node.js", "MongoDB", "AWS Lambda"],
+          metrics: "Reduced claim processing time by 45%"
+        }
       ]
     },
     {
@@ -66,6 +96,15 @@ const portfolioData = {
         "Developed payment processing module handling $10M+ monthly",
         "Created automated testing framework reducing QA time by 40%",
         "Won quarterly innovation award for process improvement tool"
+      ],
+      projects: [
+        {
+          name: "E-commerce Platform",
+          client: "Fashion Retail Brand",
+          description: "Developed scalable e-commerce solution with inventory management, order processing, and integrated payment solutions. Implemented caching strategies and CDN integration for performance.",
+          technologies: ["PHP", "Laravel", "MySQL", "Vue.js", "Redis"],
+          metrics: "Handled 10,000+ concurrent users during peak sales"
+        }
       ]
     },
     {
@@ -94,6 +133,15 @@ const portfolioData = {
         "Built customer portal increasing client retention by 25%",
         "Contributed to 15+ successful client projects",
         "Completed Microsoft certification during first year"
+      ],
+      projects: [
+        {
+          name: "Government Portal Modernization",
+          client: "National Government Department",
+          description: "Modernized legacy ASP.NET applications to responsive web solutions. Implemented single sign-on integration with government identity provider and automated document workflows.",
+          technologies: ["ASP.NET MVC", "C#", "SQL Server", "jQuery", "Azure AD"],
+          metrics: "Served 2M+ citizens with improved accessibility compliance"
+        }
       ]
     },
     {
@@ -122,6 +170,14 @@ const portfolioData = {
         "Developed payment processing module handling $10M+ monthly",
         "Created automated testing framework reducing QA time by 40%",
         "Won quarterly innovation award for process improvement tool"
+      ],
+      projects: [
+        {
+          name: "Legal Case Management System",
+          description: "Developed case management solution for law firm with document management, calendar integration, and client communication tracking. Built custom reporting for billable hours.",
+          technologies: ["C#", "WinForms", "SQL Server", "Crystal Reports"],
+          metrics: "Used by 50+ legal professionals across the firm"
+        }
       ]
     },
   ],
