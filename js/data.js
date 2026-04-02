@@ -27,83 +27,94 @@ const portfolioData = {
 
   experience: [
     {
-      id: "exp1",
+      id: "exp7",
       title: "Senior Software Engineer",
       company: "Entelect",
       location: "Utrecht, Netherlands",
       startDate: "2021-10",
       endDate: "Present",
-      description: "Led architecture and development of microservices platform serving 2M+ users. Designed CI/CD pipelines reducing deployment time by 75%. Mentored team of 8 engineers and established coding standards.",
+      description: "Senior Software Engineer delivering enterprise-grade solutions across infrastructure platforms, rail logistics, and insurance domains, with a strong focus on technical excellence, modernization, and stakeholder alignment.",
       highlights: [
-        "Architected event-driven system processing 50K requests/second",
-        "Reduced infrastructure costs by $200K annually through optimization",
-        "Implemented automated testing achieving 95% code coverage"
+        "Led technical excellence initiatives across multiple high-impact enterprise projects",
+        "Mentored developers and improved team-wide engineering standards",
+        "Designed and implemented scalable architectures in both cloud and legacy environments",
+        "Acted as key liaison between technical teams and business stakeholders",
+        "Drove modernization of monolithic systems into distributed architectures"
       ],
       projects: [
         {
-          name: "Cloud Migration Platform",
-          client: "Major European Retailer",
-          description: "Led migration of legacy monolith to cloud-native microservices architecture on Azure. Implemented event-driven communication using Service Bus and designed CI/CD pipelines reducing deployment time from hours to minutes.",
-          technologies: ["Azure", ".NET 8", "React", "Terraform", "Azure DevOps"],
-          metrics: "Reduced infrastructure costs by 40% and deployment time by 75%"
+          name: "Internal Developer Portal",
+          client: "ABB",
+          description: "Developed and contributed to an Internal Developer Portal using Backstage, focusing on improving developer experience, standardizing infrastructure provisioning, and enabling self-service capabilities.",
+          technologies: ["Backstage", "React", "Node.js", "Azure DevOps", "PostgreSQL"],
+          metrics: "Reduced developer onboarding time by ~40% and enabled self-service provisioning for 80% of common infrastructure requests"
         },
         {
-          name: "Real-time Analytics Dashboard",
-          description: "Developed real-time data visualization platform processing 50K+ events per second. Built WebSocket-based dashboard with live streaming capabilities and automated alerting.",
-          technologies: ["React", "Node.js", "Apache Kafka", "Redis", "PostgreSQL"],
-          metrics: "Achieved sub-100ms latency for real-time updates"
-        }
+          name: "TAPS",
+          client: "ProRail",
+          description: "Developed rail planning capabilities and system integrations to support complex freight capacity planning, ensuring seamless interoperability with external systems.",
+          technologies: ["Azure DevOps", "Node.js", "MS SQL Server", ".Net 8"],
+          metrics: "Improved planning efficiency by ~30% and reduced manual coordination efforts across systems by ~50%"
+        },
+        {
+          name: "VodaSure",
+          client: "Vodacom Financial Services",
+          description: "Led technical design and modernization of a legacy insurance platform, introducing serverless automation, improving system reliability, and mentoring team members on best practices.",
+          technologies: ["AWS", ".NET 6", "React", "Node.js", "PostgreSQL", "GitHub Actions", "AWS Lambda"],
+          metrics: "Reduced critical production incidents by ~35%, improved deployment frequency by 2x, and automated recurring developer tasks saving ~20 hours per month"
+        },
       ]
     },
     {
-      id: "exp2",
+      id: "exp6",
       title: "Intermediate Software Engineer",
       company: "Kohde (Pty) Ltd",
       location: "Centurion, South Africa",
       startDate: "2021-09",
       endDate: "2020-11",
-      description: "Developed enterprise web applications using .NET Core and React. Collaborated with product team to translate requirements into technical solutions. Led migration from monolith to microservices architecture.",
+      description: "Intermediate Software Developer responsible for end-to-end delivery of an e-commerce platform, acting as the sole technical lead and integration specialist.",
       highlights: [
-        "Built real-time dashboard processing 1M+ data points daily",
-        "Reduced page load time by 60% through performance optimization",
-        "Led migration project saving 500+ engineering hours annually"
+        "Successfully delivered a full e-commerce platform as the sole developer",
+        "Integrated ERP, payment, and logistics systems into a unified workflow",
+        "Led all stakeholder engagement and requirement gathering",
+        "Solved complex logistical optimization problems using algorithmic approaches"
       ],
       projects: [
         {
-          name: "Property Management System",
-          client: "National Property Group",
-          description: "Developed full-stack property management solution with tenant tracking, lease management, and maintenance scheduling. Integrated with payment gateways for automated rent collection.",
-          technologies: [".NET Core", "Angular", "SQL Server", "Azure"],
-          metrics: "Processing 500+ monthly transactions with 99.9% uptime"
+          name: "TableCharm E-commerce Platform",
+          client: "TableCharm",
+          description: "Implemented and customized an open-source e-commerce solution, integrating it with ERP, payment gateways, and courier services while solving complex packing optimization challenges.",
+          technologies: ["GrandNode", "React", "Node.js", "MongoDB", "Azure DevOps", ".NET 5"],
+          metrics: "Enabled online sales channel contributing to 25% of total revenue and reduced order processing time by ~50%"
         },
         {
-          name: "Insurance Claims Portal",
-          description: "Built customer-facing portal for insurance claim submissions with document upload, status tracking, and automated workflows. Implemented OCR integration for document processing.",
-          technologies: ["React", "Node.js", "MongoDB", "AWS Lambda"],
-          metrics: "Reduced claim processing time by 45%"
+          name: "TableCharm Stock Management System",
+          client: "TableCharm",
+          description: "Enhanced and maintained a stock management system, implementing features for inventory tracking, supplier management, and reporting to support operational efficiency.",
+          technologies: ["PHP", "Laravel", "MariaDB"]
         }
       ]
     },
     {
-      id: "exp3",
+      id: "exp5",
       title: "Full Stack Developer",
       company: "Quant Engineering Solutions",
       location: "Pretoria, South Africa",
       startDate: "2018-09",
       endDate: "2020-10",
-      description: "Full-stack development of customer-facing applications. Implemented RESTful APIs and integrated third-party services. Participated in Agile ceremonies and contributed to sprint planning.",
+      description: "Software Developer contributing to the evolution of a large-scale medical practice management system, focusing on web transformation, event sourcing, and system reliability.",
       highlights: [
-        "Developed payment processing module handling $10M+ monthly",
-        "Created automated testing framework reducing QA time by 40%",
-        "Won quarterly innovation award for process improvement tool"
+        "Played a key role in transitioning a legacy desktop system to web",
+        "Introduced event sourcing concepts into an existing architecture",
+        "Improved system observability and product usage insights",
+        "Championed automated testing and code quality practices"
       ],
       projects: [
         {
-          name: "E-commerce Platform",
-          client: "Fashion Retail Brand",
-          description: "Developed scalable e-commerce solution with inventory management, order processing, and integrated payment solutions. Implemented caching strategies and CDN integration for performance.",
-          technologies: ["PHP", "Laravel", "MySQL", "Vue.js", "Redis"],
-          metrics: "Handled 10,000+ concurrent users during peak sales"
+          name: "GoodX Web “GXWeb”",
+          description: "Developed and enhanced a web-based medical practice system, introducing event sourcing capabilities and improving system reliability and usability.",
+          technologies: ["Python", "Asyncio", "PostgreSQL", "JavaScript", "Node.js"],
+          metrics: "Improved system performance by ~25% and reduced support incidents by ~20% through better observability"
         }
       ]
     },
@@ -114,69 +125,104 @@ const portfolioData = {
       location: "Pretoria, South Africa",
       startDate: "2018-04",
       endDate: "2018-08",
-      description: "Developed and maintained web applications using C# and JavaScript. Collaborated with senior developers on feature implementation. Learned industry best practices and coding standards.",
+      description: "Freelance .NET Developer providing technical expertise and development support for client projects, including kiosk-client applications and desktop management systems.",
       highlights: [
-        "Built customer portal increasing client retention by 25%",
-        "Contributed to 15+ successful client projects",
-        "Completed Microsoft certification during first year"
+        "highlights"
+      ],
+      projects: [
+        {
+          name: "Enquiries Kiosk-Client and Cloud Client-Management System",
+          client: "South African Road Accident Fund (RAF)",
+          description: "Client based Microsoft Certified Professional, providing technical expertise, refurbishing and optimizing a kiosk-client application and cloud client-management system.",
+          technologies: ["C#", "WPF", "GitHub"],
+          metrics: "Compliance with RAF's technical standards and improved system performance and reliability, contributing to enhanced user experience and operational efficiency."
+        },
+        {
+          name: "Obsidian desktop management system POC",
+          description: "Proof of concept development for desktop management system, integrating with Microsoft Intune and Azure AD for device inventory, remote management, and security compliance.",
+          technologies: ["C#", "Azure AD", "Microsoft Graph API"]
+        }
       ]
     },
     {
-      id: "exp5",
+      id: "exp3",
       title: "Technical Consultant",
       company: "EOH MC Solutions",
       location: "Cape Town, South Africa",
       startDate: "2016-12",
       endDate: "2018-03",
-      description: "Developed and maintained web applications using C# and JavaScript. Collaborated with senior developers on feature implementation. Learned industry best practices and coding standards.",
+      description: "Technical Consultant delivering enterprise financial systems, with early exposure to CQRS and event-driven architectures in a production environment.",
       highlights: [
-        "Built customer portal increasing client retention by 25%",
-        "Contributed to 15+ successful client projects",
-        "Completed Microsoft certification during first year"
+        "Gained strong foundation in CQRS and event sourcing",
+        "Delivered enterprise financial data capture system",
+        "Led agile ceremonies and promoted CI/CD practices",
+        "Improved team delivery consistency through better engineering practices"
       ],
       projects: [
         {
-          name: "Government Portal Modernization",
-          client: "National Government Department",
-          description: "Modernized legacy ASP.NET applications to responsive web solutions. Implemented single sign-on integration with government identity provider and automated document workflows.",
-          technologies: ["ASP.NET MVC", "C#", "SQL Server", "jQuery", "Azure AD"],
-          metrics: "Served 2M+ citizens with improved accessibility compliance"
+          name: "Annuity Quote Management System (AQMS)",
+          client: "Old Mutual",
+          description: "Developed a cloud-based annuity data capture system, enabling digitization of manual processes and improving data accessibility for financial decision-making.",
+          technologies: ["ASP.NET MVC", "C#", "SQL Server", "AngularJS", "Azure DevOps"],
+          metrics: "Digitized 90% of manual processes and reduced data processing turnaround time by ~60%"
+        },
+        {
+          name: "Student Enrollment and Management System",
+          client: "University of Stellenbosch Business School",
+          description: "Maintained student enrollment and management system with course registration, fee payment integration, and academic record tracking. Implemented role-based access control for students, faculty, and administrators.",
+          technologies: [".Net Framework", "C#", "SQL Server", "jQuery"]
         }
       ]
     },
     {
-      id: "exp6",
+      id: "exp2",
       title: "Full Stack Developer",
       company: "Quant Engineering Solutions",
       location: "Pretoria, South Africa",
       startDate: "2015-09",
       endDate: "2016-11",
-      description: "Full-stack development of customer-facing applications. Implemented RESTful APIs and integrated third-party services. Participated in Agile ceremonies and contributed to sprint planning.",
+      description: "Software Developer contributing to the evolution of a large-scale medical practice management system, focusing on web transformation, event sourcing, and system reliability.",
       highlights: [
-        "Developed payment processing module handling $10M+ monthly",
-        "Created automated testing framework reducing QA time by 40%",
-        "Won quarterly innovation award for process improvement tool"
+        "Played a key role in transitioning a legacy desktop system to web",
+        "Introduced event sourcing concepts into an existing architecture",
+        "Improved system observability and product usage insights",
+        "Championed automated testing and code quality practices"
+      ],
+      projects: [
+        {
+          name: "GoodX Web “GXWeb”",
+          description: "Contributed to early-stage development of a cloud-based extension to a desktop medical system, focusing on feature parity and integration capabilities.",
+          technologies: ["Python", "CherryPy", "PostgreSQL", "JavaScript", "Grunt", "Knockout.js"],
+          metrics: "Delivered core features enabling onboarding of initial pilot customers and reducing manual workflows by ~30%"
+        },
+        {
+          name: "ChloroForm",
+          description: "Lead maintainer of legacy Anesthesiologist’s booking and scheduling system, responsible for refactoring codebase, implementing new features, and optimizing performance.",
+          technologies: ["Python", "PostgreSQL", "CherryPy", "Knockout.js"],
+          metrics: "Mission-critical system with 99.9% uptime and improved scheduling efficiency by ~25% through performance optimizations and feature enhancements"
+        }
       ]
     },
     {
-      id: "exp7",
+      id: "exp1",
       title: "Learner Developer",
       company: "OneLaw (Pty) Ltd",
       location: "Pretoria, South Africa",
       startDate: "2012-01",
       endDate: "2014-10",
-      description: "Full-stack development of customer-facing applications. Implemented RESTful APIs and integrated third-party services. Participated in Agile ceremonies and contributed to sprint planning.",
+      description: "Junior Software Developer supporting and enhancing financial recovery systems, with a focus on production support and incremental system improvements.",
       highlights: [
-        "Developed payment processing module handling $10M+ monthly",
-        "Created automated testing framework reducing QA time by 40%",
-        "Won quarterly innovation award for process improvement tool"
+        "Supported production systems in a regulated financial environment",
+        "Improved internal tooling and SLA tracking capabilities",
+        "Collaborated closely with support and engineering teams",
+        "Gained foundational experience in agile delivery and release cycles"
       ],
       projects: [
         {
-          name: "Legal Case Management System",
-          description: "Developed case management solution for law firm with document management, calendar integration, and client communication tracking. Built custom reporting for billable hours.",
-          technologies: ["C#", "WinForms", "SQL Server", "Crystal Reports"],
-          metrics: "Used by 50+ legal professionals across the firm"
+          name: "Lotus",
+          description: "Maintained and enhanced a debt recovery platform, introducing SLA tracking improvements and supporting operational workflows.",
+          technologies: [".Net Framework", "SQL Server", "JavaScript", "MS Dynamics CRM"],
+          metrics: "Improved ticket resolution tracking accuracy by ~40% and reduced SLA breaches by ~25%"
         }
       ]
     },
