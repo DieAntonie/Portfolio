@@ -166,7 +166,7 @@ const Components = {
           <div class="timeline-content">
             <h3>${exp.title}</h3>
             <p class="company">${exp.company}</p>
-            <p class="location">${Icons.location} ${exp.location}</p>
+            <p class="location">${exp.location}</p>
             <p>${exp.description}</p>
             <ul class="timeline-highlights">
               ${exp.highlights.map(h => `<li>${h}</li>`).join('')}

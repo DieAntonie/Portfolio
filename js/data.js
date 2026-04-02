@@ -127,7 +127,10 @@ const portfolioData = {
       endDate: "2018-08",
       description: "Freelance .NET Developer providing technical expertise and development support for client projects, including kiosk-client applications and desktop management systems.",
       highlights: [
-        "highlights"
+        "Provided technical expertise and development support for client projects",
+        "Refurbished and optimized a kiosk-client application for improved performance",
+        "Developed proof of concept for desktop management system integrating with Microsoft Intune and Azure AD",
+        "Ensured compliance with client technical standards and contributed to enhanced user experience"
       ],
       projects: [
         {
